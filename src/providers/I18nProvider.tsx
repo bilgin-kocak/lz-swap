@@ -11,7 +11,8 @@ import * as supportedLanguages from '../i18n';
 import translation from '../i18n/en/translation.json';
 
 export const I18NProvider: React.FC<PropsWithChildren<{}>> = ({ children }) => {
-  const languageMode = useSettingsStore((state) => state.languageMode);
+  // const languageMode = useSettingsStore((state) => state.languageMode);
+  const languageMode = 'en'
 
   const i18n = useMemo(() => {
     const resources: Record<string, any> = {

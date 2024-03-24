@@ -81,7 +81,7 @@ export const NavbarButtons = ({ redirectToLearn }: NavbarButtonsProps) => {
         isSuccess={isSuccess}
       />
 
-      <MenuToggle
+      {/* <MenuToggle
         ref={mainMenuAnchor}
         id="main-burger-menu-button"
         aria-controls={openMainMenu ? 'main-burger-menu' : undefined}
@@ -95,7 +95,7 @@ export const NavbarButtons = ({ redirectToLearn }: NavbarButtonsProps) => {
             color: 'inherit',
           }}
         />
-      </MenuToggle>
+      </MenuToggle> */}
       <MainMenu anchorEl={mainMenuAnchor.current} />
     </NavbarButtonsContainer>
   );

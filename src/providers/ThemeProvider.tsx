@@ -21,7 +21,8 @@ export const useDetectDarkModePreference = () => {
 export const ThemeProvider: React.FC<PropsWithChildren<{}>> = ({
   children,
 }) => {
-  const isDarkMode = useDetectDarkModePreference();
+  // const isDarkMode = useDetectDarkModePreference();
+  const isDarkMode = true;
 
   const activeTheme = useMemo(() => {
     return isDarkMode ? darkTheme : lightTheme;

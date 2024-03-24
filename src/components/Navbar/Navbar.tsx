@@ -1,5 +1,6 @@
 import { useTheme } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
+import { Typography } from '@mui/material';
 import {
   JumperLearnLogo,
   JumperLogo,
@@ -34,13 +35,16 @@ export const Navbar = ({ hideNavbarTabs, redirectToLearn }: NavbarProps) => {
   return (
     <Container>
       <LogoLink onClick={handleClick} sx={{ height: '32px' }}>
-        <Logo
+        {/* <Logo
           isConnected={!!account?.address}
           theme={theme}
           logo={redirectToLearn ? <JumperLearnLogo /> : <JumperLogo />}
-        />
+        /> */}
+        <Typography variant="h4" color={'white'}>
+          LZSwap
+        </Typography>
       </LogoLink>
-      {!hideNavbarTabs ? <NavbarTabs /> : null}
+      {/* {!hideNavbarTabs ? <NavbarTabs /> : null} */}
       <NavbarButtons redirectToLearn={redirectToLearn} />
     </Container>
   );
